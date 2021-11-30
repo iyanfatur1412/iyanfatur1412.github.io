@@ -1,0 +1,391 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    width: 100vw;
+    padding: 20px 60px;
+    box-sizing: border-box;
+    background-color: rgb(0, 119, 255);
+    /* position: fixed; */
+    z-index: 99999;
+}
+
+.navs {
+    height: 0;
+    overflow-y: hidden;
+    transition: .4s ease-in;
+}
+
+.show-navs {
+    height: 152px;
+}
+
+.navs a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.toggle {
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    left: 100%;
+}
+
+.toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+
+
+/* Jumbotron */
+
+.jumbotron {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: rgb(87, 188, 255);
+    overflow: hidden;
+}
+
+.jumbotron .tagline {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff;
+    color: rgb(1, 11, 22);
+}
+
+.tagline h1 {
+    font-size: 2.4rem;
+    opacity: 0;
+    animation: fadeIn .7s ease-in forwards;
+    animation-delay: 1.2s;
+    margin: 5px 0;
+}
+
+.tagline h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    opacity: 0;
+    animation: fadeIn .7s ease-in forwards;
+    animation-delay: .6s;
+    margin: 5px 0;
+}
+
+.tagline p {
+    opacity: 0;
+    animation: fadeIn .7s ease-in forwards;
+    margin: 0;
+}
+
+.jumbotron .img {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    filter: blur(1px);
+}
+
+.bg-wave {
+    width: 100vw;
+    height: 100px;
+    margin-top: -80px;
+    position: relative;
+    z-index: 10;
+    background: url(bahan/bg-wave-1.png);
+    background-size: cover;
+}
+
+
+
+/* About */
+
+.about {
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.about p {
+    line-height: 25px;
+}
+
+
+
+/* Carousel */
+
+.portfolio {
+    width: 100vw;
+    margin-top: 120px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.carousel {
+    width: 100%;
+    position: relative;
+}
+
+.carousel-item {
+    width: 100%;
+    display: none;
+    animation: fade .8s ease-in forwards;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.btn {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    line-height: 50%;
+    font-size: 3rem;
+    outline: none;
+    background: none;
+    border: none;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.btn.prev {
+    left: 0;
+    padding-left: 40px;
+}
+
+.btn.next {
+    right: 0;
+    padding-right: 40px;
+}
+
+
+
+/* Gallery */
+
+.gallery {
+    width: 80vw;
+    margin: 120px auto 0;
+}
+
+.gallery-img {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery-img .img {
+    width: 110px;
+    height: 110px;
+    margin: 5px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-img .img a {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-img .img img {
+    transition: .8s;
+}
+
+.gallery-img .img img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Contact */
+
+.contact {
+    width: 100vw;
+    margin-top: 160px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 9;
+}
+
+.code {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.code a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.code img {
+    width: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+    z-index: 9;
+    color: #fff;
+}
+
+.bg-wave-blue {
+    width: 100vw;
+    height: 240px;
+    background: url(bahan/bg-wave.png);
+    background-size: cover;
+    margin-top: -210px;
+}
+
+
+#about:target, #portfolio:target, #gallery:target, #contact:target {
+    transition: .7s;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .navs {
+        height: auto;
+        text-align: right;
+    }
+    .navs a {
+        display: inline-block;
+        padding: 0 20px;
+    }
+    .toggle {
+        display: none;
+    }
+    .jumbotron {
+        flex-direction: row;
+        height: 500px;
+    }
+    .jumbotron .tagline {
+        position: static;
+        width: 50%;
+        align-self: center;
+        justify-self: center;
+        text-align: left;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+    .tagline h1 {
+        font-size: 2rem;
+    }
+    .tagline h3 {
+        font-size: 1.6rem;
+        margin-top: 10px;
+    }
+    .tagline p {
+        margin-top: 8px;
+    }
+    .jumbotron .img {
+        width: 50%;
+        position: static;
+        align-self: flex-end;
+    }
+    .jumbotron .img img {
+        width: 100%;
+    }
+    .about {
+        width: 60vw;
+        margin: 80px auto 0;
+        text-align: justify;
+    }
+    .carousel {
+        width: 80%;
+        margin: auto;
+    }
+    .gallery-img {
+        width: 75%;
+        margin: auto;
+    }
+    .gallery-img .img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .jumbotron .img img {
+        width: 80%;
+    }
+    .bg-wave {
+        height: 160px;
+        margin-top: -120px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .jumbotron .tagline {
+        padding-left: 60px;
+        box-sizing: border-box;
+    }
+    .jumbotron .img img {
+        width: 70%;
+        transform: translateY(30px);
+    }
+    .gallery-img .img {
+        width: 250px;
+        height: 250px;
+    }
+    .code {
+        padding-top: 80px;
+    }
+    .bg-wave-blue {
+        height: 280px;
+        margin-top: -260px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+        color: #000;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
