@@ -273,6 +273,51 @@ footer {
     transition: .7s;
 }
 
+#photo1, #photo2, #photo3, #photo4, #photo5, #photo6 {
+    position: fixed;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+
+#photo1:target, #photo2:target, #photo3:target, #photo4:target, #photo5:target, #photo6:target {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    opacity: 1;
+}
+
+.photo {
+    z-index: 999999999;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    color: #f00;
+    z-index: 9999999999999;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.photo img {
+    height: 80%;
+}
+
+#photo6 img {
+    width: 100%;
+    height: auto;
+}
 
 
 @media screen and (min-width: 768px) {
