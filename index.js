@@ -1,40 +1,19 @@
-const btnNavs = document.querySelector(".toggle"),
-      navs = document.querySelector(".navs"),
-      carouselItem = document.querySelectorAll(".carousel-item"),
-      btnPrev = document.querySelector(".prev"),
-      btnNext = document.querySelector(".next");
+let viewResponsive = 2;
 
-
-btnNavs.addEventListener("click", function() {
-    navs.classList.toggle("show-navs");
-})
-
-let index = 1;
-showCarousel();
-
-function nextCarousel() {
-    index++;
-    if(index>carouselItem.length) {
-        index = 1;
-    }
-    showCarousel()
+if(document.body.offsetWidth >= 1024) {
+    viewResponsive = 1;
+}else if(document.body.offsetWidth >= 640) {
+    viewResponsive = 3;
 }
 
-btnNext.addEventListener("click", nextCarousel);
-
-function prevCarousel() {
-    index--;
-    if(index < 1) {
-        index = carouselItem.length;
-    }
-    showCarousel()
-}
-
-btnPrev.addEventListener("click", prevCarousel);
-
-function showCarousel() {
-    for(let i=0; i<carouselItem.length; i++) {
-        carouselItem[i].style.display = "none";
-    }
-    carouselItem[index-1].style.display = "block";
-}
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    slidesPerView: viewResponsive,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay: false
+});
+const sw = document.querySelector(".swiper").swiper;
+sw.slideNext();

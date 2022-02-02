@@ -4,146 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- swiper css -->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-- My css -->
     <link rel="stylesheet" href="index.css">
     <title>Septian Paturahman</title>
 </head>
 <body>
-    
+
     <nav class="navbar">
-        <div class="toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="navs">
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-        </div>
+        <h4>{iyanfatur}</h4>
     </nav>
 
+    <div class="container">
 
-    <section class="jumbotron">
-        <div class="tagline">
-            <h1>Septian Paturahman</h1>
-            <h3>Multimedia</h3>
-            <p>Programming | Animasi | Desain | Microsoft Office</p>
-        </div>
-        <div class="img">
-            <img src="bahan/edit7.png" alt="" width="100%">
-        </div>
-    </section>
-    <div class="bg-wave"></div>
+        <section class="profil">
+            <div class="col-image">
+                <div class="image">
+                    <img src="bahan/iyan4X6.jpg" alt="iyanfatur">
+                </div>
+            </div>
+            <div class="col-name">
+                <h2 class="name">Septian Paturahman</h2>
+                <h3 class="description">Web Developer</h3>
+                <p>{iyanfatur}</p>
+            </div>
+            <div class="btn-project">
+                <a href="https://www.instagram.com/iyanfatur10" target="_blank" >My Project</a>
+            </div>
+        </section>
 
+        <section class="about">
+            <div class="title">
+                <h4>About</h4>
+            </div>
+            <div class="description">
+                <p><span>Hi, </span>My name is Septian Paturahman, you can call me iyan. I usually make a website, drawing, and desain. If you hire me, you can tell via my contact.</p>
+            </div>
+        </section>
 
-    <section class="about" id="about">
-        <div class="title">
-            <h4>About</h4>
-        </div>
-        <p>Seorang pria yang baru saja lulus dari sekolahnya di SMKN 2 Garut, mengambil jurusan Multimedia, dan saat ini sedang mengembangkan ilmunya terutama di bidang Pemrograman Web. Hobby-nya bersepeda dan kedepannya berkeinginan untuk menjelajah Indonesia bersama sepeda-nya. Lalu dia juga menyenangi olahraga Bulu Tangkis dan pemain favoritnya yaitu Kento Momota dari Jepang.</p>
-    </section>
+        <section class="contact">
+            <div class="title">
+                <h4>Contact</h4>
+            </div>
+            <div class="email">
+                <p><strong>Email : </strong><a href="mailto:iyanfatur1412@gmail.com">iyanfatur1412@gmail.com</a></p>
+            </div>
+            <div class="whatsapp">
+                <p><strong>WhatsApp : </strong><a href="https://api.whatsapp.com/send?phone=6289612140102">6289612140102</a></p>
+            </div>
+        </section>
 
-    <section class="portfolio" id="portfolio">
-        <div class="title">
-            <h4>Portfolio</h4>
-        </div>
-        <div class="carousel">
-            <button class="btn prev">&lt</button>
-            <div class="carousel-item">
-                <img src="bahan/documenter.jpg" alt="">
+        <section class="skill">
+            <div class="title">
+                <h4>What I Can?</h4>
             </div>
-            <div class="carousel-item">
-                <img src="bahan/isometric.jpg" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="bahan/landing-page.png" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="bahan/survey-page.png" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="bahan/webAnime.jpg" alt="">
-            </div>
-            <button class="btn next">&gt</button>
-        </div>
-    </section>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <i class="fab fa-html5" style="color: #f00"></i>
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="fab fa-css3-alt" style="color: #00a2ff"></i>
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="fab fa-js" style="color: #ffd900"></i>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="bahan/xd.png" alt="photosop">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="bahan/photosop.png" alt="photosop">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="bahan/animate.png" alt="photosop">
+                    </div>
+                </div>
 
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
 
-    <section class="gallery" id="gallery">
-        <div class="title">
-            <h4>Gallery</h4>
-        </div>
-        <div class="gallery-img">
-            <div class="img">
-                <a href="#photo1"><img src="bahan/photo1.jpg" alt="" width="100%" height="100%"></a>
+        <section class="project">
+            <div class="title">
+                <h4>My Project</h4>
             </div>
-            <div class="img">
-                <a href="#photo2"><img src="bahan/photo2.jpg" alt="" width="100%" height="100%"></a>
+            <div class="col-project">
+                <div class="image">
+                    <a href="https://www.instagram.com/p/CZdv9j2BrTr" target="_blank"><img src="bahan/zenplayers.png" alt="zenplayers"></a>
+                </div>
+                <div class="image">
+                    <a href="https://www.instagram.com/p/CZdwV-Ph9Y1" target="_blank"><img src="bahan/todo-list.png" alt="todo-list"></a>
+                </div>
+                <div class="image">
+                    <a href="https://www.instagram.com/p/CZdwqLfBI9i" target="_blank"><img src="bahan/calculator.png" alt="calculator"></a>
+                </div>
+                <div class="image">
+                    <a href="https://www.instagram.com/p/CZdw4-8BnZE" target="_blank"><img src="bahan/time.png" alt="time-web"></a>
+                </div>
+                <div class="image">
+                    <a href="https://www.instagram.com/p/CZdxnuvBuNE" target="_blank"><img src="bahan/IMG_20200911_124551_078.jpg" alt="vector"></a>
+                </div>
+                <div class="image">
+                    <a href="https://www.instagram.com/p/CZdxsfoh1JG" target="_blank"><img src="bahan/IMG_20200824_174015_700.jpg" alt="vector"></a>
+                </div>
+                <div class="image">
+                    <a href="https://www.instagram.com/p/CZdxGL8hocQ" target="_blank"><img src="bahan/edit1.jpg" alt="anime girl"></a>
+                </div>
+                <div class="image">
+                    <a href="https://www.instagram.com/p/CZdxhvpBe_X" target="_blank"><img src="bahan/IMG_20200527_055534_978.jpg" alt="photosop editing"></a>
+                </div>
             </div>
-            <div class="img">
-                <a href="#photo3"><img src="bahan/photo3.jpg" alt="" width="100%" height="100%"></a>
-            </div>
-            <div class="img">
-                <a href="#photo4"><img src="bahan/photo4.jpg" alt="" width="100%" height="100%"></a>
-            </div>
-            <div class="img">
-                <a href="#photo5"><img src="bahan/photo5.jpg" alt="" width="100%" height="100%"></a>
-            </div>
-            <div class="img">
-                <a href="#photo6"><img src="bahan/photo6.jpg" alt="" width="100%" height="100%"></a>
-            </div>
-        </div>
-    </section>
-
-    <div id="photo1" class="photo">
-        <a href="" class="close">x</a>
-        <img src="bahan/photo1.jpg" alt="">
+            <a href="https://www.instagram.com/iyanfatur10/" class="all" target="_blank">view all</a>
+        </section>
     </div>
-    <div id="photo2" class="photo">
-        <a href="" class="close">x</a>
-        <img src="bahan/photo2.jpg" alt="">
-    </div>
-    <div id="photo3" class="photo">
-        <a href="" class="close">x</a>
-        <img src="bahan/photo3.jpg" alt="">
-    </div>
-    <div id="photo4" class="photo">
-        <a href="" class="close">x</a>
-        <img src="bahan/photo4.jpg" alt="">
-    </div>
-    <div id="photo5" class="photo">
-        <a href="" class="close">x</a>
-        <img src="bahan/photo5.jpg" alt="">
-    </div>
-    <div id="photo6" class="photo">
-        <a href="" class="close">x</a>
-        <img src="bahan/photo6.jpg" alt="">
-    </div>
+
+    <footer class="footer">
+        <p>Copyright 2022 All Rights Reserved by iyanfatur</p>
+    </footer>
 
 
-    <section class="contact" id="contact">
-        <div class="code email">
-            <img src="bahan/gmail.png" alt="">
-            <a href="mailto:iyanfatur1412@gmail.com" target="_blank">Email</a>
-        </div>
-        <div class="code telepon">
-            <img src="bahan/tel.png" alt="">
-            <a href="tel:089612140102" target="_blank">Telepon</a>
-        </div>
-        <div class="code instagram">
-            <img src="bahan/ig.png" alt="">
-            <a href="https://www.instagram.com/iyanfatur1412/" target="_blank">Instagram</a>
-        </div>
-        <div class="code whatsapp">
-            <img src="bahan//wa.png" alt="">
-            <a href="https://wa.wizard.id/be781b" target="_blank">WhatsApp</a>
-        </div>
-    </section>
-
-    <footer>Design by iyanfatur</footer>
-    <div class="bg-wave-blue"></div>
-
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
