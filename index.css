@@ -263,6 +263,12 @@ body {
     }
 }
 
+@media screen and (max-width: 1023px) {
+    .about, .contact {
+        opacity: 0;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .navbar, .footer, .project {
         display: none;
@@ -288,5 +294,17 @@ body {
     }
     .btn-project {
         display: block;
+    }
+}
+
+
+@keyframes slideBottom {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
