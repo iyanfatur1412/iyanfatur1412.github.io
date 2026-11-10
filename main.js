@@ -107,7 +107,7 @@ function openMenu(type) {
                                 <span class="text-sao-blue font-bold">Item #: Gallery My Design Grafis</span>
                                 <p class="text-slate-300">Kumpulan berbagai desain yang telah saya buat</p>
                             </div>
-                            <a href="gallery.html" class="px-2 py-1 bg-green-500/20 hover:bg-green-200/20 text-green-400 border border-green-500 text-[10px]">VISIT</a>
+                            <a href="https://iyanfatur1412.github.io/my-project" class="px-2 py-1 bg-green-500/20 hover:bg-green-200/20 text-green-400 border border-green-500 text-[10px]">VISIT</a>
                         </div>
                         <div class="p-2.5 bg-blue-500/10 border border-sao-blue/40 flex justify-between items-center">
                             <div>
