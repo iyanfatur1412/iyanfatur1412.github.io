@@ -150,7 +150,7 @@ function openMenu(type) {
         menuTitle.innerText = "> SECURE TRANSMISSION (CONTACT)";
         menuBody.innerHTML = `
                     <div class="w-50 text-center">
-                        <a href="">
+                        <a href="https://wa.me/6289604426520?text=Assalamualaikum..." target="_blank">
                             <button type="submit" class="px-5 py-2 bg-blue-500/30 hover:bg-blue-500/60 border border-sao-blue font-bold text-sao-blue uppercase tracking-wider transition">Contact Me</button>
                         </a>
                     </div>
